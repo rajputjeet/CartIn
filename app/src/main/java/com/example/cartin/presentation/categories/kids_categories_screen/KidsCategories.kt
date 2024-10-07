@@ -118,7 +118,7 @@ fun KidsCategories(navController: NavController) {
                                 .align(Alignment.CenterHorizontally)
                         )
                     }
-                    Spacer(modifier = Modifier.height(16.dp))  // Spacer between header and list
+                    Spacer(modifier = Modifier.height(16.dp))
                 }
 
 

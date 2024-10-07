@@ -23,10 +23,12 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.cartin.R
 import com.example.cartin.presentation.Screen
+import com.example.cartin.presentation.bag.BagScreen
 import com.example.cartin.presentation.bottom_nav.items.BottomNavigationItem
 import com.example.cartin.presentation.categories.WomenCategories
 import com.example.cartin.presentation.categories.kids_categories_screen.KidsCategories
 import com.example.cartin.presentation.categories.men_catefories_screen.MenCategories
+import com.example.cartin.presentation.favorite.FavoriteScreen
 import com.example.cartin.presentation.home.HomeScreen
 import com.example.cartin.presentation.shop.ShopScreen
 import com.example.cartin.presentation.ui.theme.Orange
@@ -144,10 +146,10 @@ fun BottomNavigationScreen() {
                 ShopScreen(bottomNavController)
             }
             composable(Screen.bagScreen.rout) {
-                // BagScreen(navController) // Uncomment when implemented
+                 BagScreen(bottomNavController) // Uncomment when implemented
             }
             composable(Screen.favoriteScreen.rout) {
-                // FavoriteScreen(navController) // Uncomment when implemented
+                 FavoriteScreen(bottomNavController) // Uncomment when implemented
             }
             composable(Screen.profileScreen.rout) {
                 // ProfileScreen(navController) // Uncomment when implemented
